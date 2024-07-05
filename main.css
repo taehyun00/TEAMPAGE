@@ -1,0 +1,56 @@
+header {
+    height: 51px; 
+    line-height: 50px;
+    z-index: 100; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+h1{
+    position :relative; 
+    top: 100px;
+    font-size: 200px;
+    display: flex;
+    justify-content: left;
+}
+hr.hr-13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+  }
+  ul, li {
+    list-style: none;
+  }
+  header .gnb > li a:hover { 
+    color: #ccc; transition: all .2s linear;
+  }
+
+  header .gnb > li a { 
+    padding: 15px; 
+    font-size: 17px; 
+    font-weight: bold; 
+    letter-spacing: -1.5px;
+    color: #000000; 
+  }
+  header > div {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 75%; 
+    margin: 0 auto;
+  }
+  header .gnb {
+    display: flex; 
+    gap: 30px;
+  }
+  
