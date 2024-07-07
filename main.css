@@ -18,7 +18,7 @@ html {
   }
 h1{
     position :relative; 
-    top: 100px;
+    top: 50px;
     font-size: 200px;
     display: flex;
     justify-content: left;
@@ -31,11 +31,10 @@ hr.hr-13 {
   ul, li {
     list-style: none;
   }
-  header .gnb > li a:hover { 
+li a:hover { 
     color: #ccc; transition: all .2s linear;
   }
-
-  header .gnb > li a { 
+li a { 
     padding: 15px; 
     font-size: 17px; 
     font-weight: bold; 
@@ -54,3 +53,13 @@ hr.hr-13 {
     gap: 30px;
   }
   
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  a:hover, a:focus {
+    outline: none;
+  }
+ 
