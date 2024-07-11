@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Ploy</title>
+
+</head>
+<body>
+    <header style="background-color :#ffffff">
+        <section style="display: flex; position :relative; top:0px; left:920px;" class="row columns">
+            <h3 style ="position :relative; top:5px; right:800px;"><img src="/logo.png" width="100px;"></h3>
+            <ul></ul>
+              <li><a href="#1">
+                <span>팀소개</span>
+         
+              </a></li>
+
+              <li><a href="#2">
+                <span>프로젝트</span>
+      
+              </a></li>
+
+              <li><a href="#3">
+                <span>팀원소개</span>
+              </a></li>
+
+              <li><a href="#4">
+                <span>팀연혁</span>
+              </a></li>
+
+            </ul>
+        </section>
+          <hr class="hr-13">
+    </header>
+
+    <div id ="1" style= "height : 800px;">
+      <div class="div-filter"></div>
+      <p style="position :relative; left:15px; top:40px; font-size :150px; font-weight : bold">PLOY</p>
+        <p style="position :relative; left:25px; top:20px; font-size :35px; font-weight : bold">더 나은 부소마고를 위해</p>
+    </div>
+
+    <br>
+
+    <div id ="2" style="height : 800px;">
+        <p style="position :relative; left:15px; top:100px; font-size :50px; font-weight : bold">PROJECT</p>
+
+        <div style="width: 100%; height: 100%; position: relative;">
+          <div style="left: 20px; top: 100px; position: absolute; color: black; font-size: 48px; font-family: Inter; font-weight: 400; word-wrap: break-word">PLOY만의 <span style="color :rgb(112, 122, 168) ">특별한</span> 프로젝트</div>
+
+          <div style="width: 1200px; height: 0px; left: 20px; top: 200px; position: absolute; border: 2px black solid"></div>
+        </div>
+
+      <div style="width: 300px; height: 466px; left: 120px; top: 1300px; position: absolute; background: #324c6a; border-radius: 30px"id="p_four"></div>
+      <div style="width: 300px; height: 466px; left: 570px; top: 1300px; position: absolute; background: #4d75a3; border-radius: 30px"id="p_five"></div>
+      <div style="width: 300px; height: 466px; left: 1020px; top: 1300px; position: absolute; background: #74aff3; border-radius: 30px"id="p_six"></div>
+
+      <img style="width: 200px; height: 200px; left: 165px; top: 1450px; position: absolute;border-radius: 30px;" src="launderring.png" id="p_eight"/>
+      <div id="modalContainer" class="hidden" style="z-index: 1050">
+        <div id="modalContent"><img src="launderring.png" style="width: 500 px;border-radius: 10px;height: 200px;"/>
+          <img src="image.png" style="width: 500 px;border-radius: 10px;height: 200px;"/>
+          <h2 >랜더링</h2>
+        </div>
+      </div>
+
+      <div style="width: 249px; height: 130px; left: 143px; top: 1780px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: bold; word-wrap: break-word"id="p_seven">랜더링</div>
+      <div style="width: 249px; height: 130px; left: 593px; top: 1780px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: bold; word-wrap: break-word"id="p_seven">공사중</div>
+      <div style="width: 249px; height: 130px; left: 1043px; top: 1780px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: bold; word-wrap: break-word"id="p_seven">공사중</div>
+    
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id ="3" style="height : 800px;">
+        <p style="position :relative; left:15px; top:100px; font-size :50px; font-weight : bold">PLOY를 만들어가는 사람들</p>  
+    </div>
+
+    <div id ="4" style="height : 800px;">
+
+      <section class="neon">
+      <p class="p-1">P</p>
+      <p class="p-2">L</p>
+      <p class="p-3">O</p>
+      <p class="p-4">Y</p>
+      </section>
+
+      <div><p style="position :relative; left:15px; top:70px; font-size :50px; font-weight : bold">PLOY의 역사</p></div>
+
+        <div class="history" style="position :relative; left:15px; top:100px; width:600px; height:500px;">
+            <div>
+                <h2>2024-06-18</h2>
+                <ol>
+                  <li>PLOY 2기 인턴 채용</li>
+                 </ol>
+              </div>
+    
+            <div>
+              <h2>2024-06-14</h2>
+              <ol>
+                <li>PLOY 전공동아리 중간발표회 발표</li>
+               </ol>
+            </div>
+         
+            <div>
+              <h2>2024-03-28</h2>
+              <ol>
+                <li>PLOY 전공동아리발표회<li>
+                <li></li>
+              </ol>
+            </div>
+         
+            <div>
+              <h2>2024-03-14</h2>
+              <ol>
+                <li>PLOY 조직</li>
+                <li></li>
+              </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      const modalOpenButton = document.getElementById('p_eight');
+const modal = document.getElementById('modalContainer');
+
+modalOpenButton.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+});
+
+modal.addEventListener('click', () => {
+  modal.classList.add('hidden');
+});
+
+      
+      let observer=new IntersectionObserver((e)=>{
+        e.forEach((box)=>{
+            if(box.isIntersecting){
+            box.target.style.opacity=1;
+            }
+            else{
+                box.target.style.opacity=0;
+            }
+        })
+    })
+    
+    let div=document.querySelectorAll('div');
+    
+    observer.observe(div[0]);
+    observer.observe(div[1]);
+    observer.observe(div[2]);
+    observer.observe(div[3]);
+    observer.observe(div[4]);
+    observer.observe(div[5]);
+    observer.observe(div[6]);
+    observer.observe(div[7]);
+    observer.observe(div[8]);
+    observer.observe(div[9]);
+    observer.observe(div[10]);
+    observer.observe(div[11]);
+    observer.observe(div[12]);
+    observer.observe(div[13]);
+    observer.observe(div[14]);
+    observer.observe(div[15]);
+    observer.observe(div[16]);
+    observer.observe(div[17]);
+    observer.observe(div[18]);
+    observer.observe(div[19]);
+    observer.observe(div[20]);
+    observer.observe(div[21]);
+    
+
+    </script>
+</body>
+</html>
